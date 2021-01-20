@@ -1,0 +1,5 @@
+
+
+org.springframework.boot.autoconfigure.EnableAutoConfiguration = \
+  com.may.phyo.DataSourceAutoConfiguration,\
+  com.may.phyo.JpaAutoConfiguration

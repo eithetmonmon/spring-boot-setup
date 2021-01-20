@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+<div>
+    Your ToDo List :
+    <p th:if="{todoItems.isEmpty()}">No Task Define Yet</p>
+    <ul>
+        <form action="#" th:action="@{/add}" th:object="${newtodoItem}" method="post">
+            <p>
+                Item :
+                <input type="text" th:field ="*{title}"/>
+            </p>
+            <p>
+                <input type="submit" value="submit">
+                <input type="reset" value="reset">
+            </p>
+        </form>
+    </ul>
+</div>
+</body>
+</html>
